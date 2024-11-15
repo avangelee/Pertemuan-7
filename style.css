@@ -1,0 +1,21 @@
+:root {
+    --btn-color:lightblue;
+    --text-color:#222;
+    --body-color:white;
+}
+
+html.dark {
+    --btn-color:darkblue;
+    --text-color:white;
+    --body-color:#444;
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+.btn {
+    background-color: var(--btn-color);
+    color: var(--text-color);
+
+}

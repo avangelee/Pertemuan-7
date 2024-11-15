@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --body-color:rgb(16, 16, 75);
+    --text-color:white;
+    --btn-color:rgb(92, 229, 239);
+}
+
+html.light {
+    --body-color:rgb(255, 255, 255);
+    --text-color:rgb(16, 16, 75);
+    --btn-color:rgb(78, 181, 188);
+}
+
+body {
+    background-color: var(--body-color);
+    padding: 30px;
+}
+
+* {
+    color: var(--text-color);
+    font-family: "Host Grotesk", sans-serif;
+}
+
+span {
+    color: var(--btn-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.navbar .kiri {
+    font-size: 24px;
+    font-weight: 1000;
+
+}
+
+.navbar .kanan .link {
+    text-decoration: none;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.navbar .kanan .link:hover {
+    color: var(--btn-color);
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap: 100px;
+}
+
+.header .right img {
+    width: 100%;
+}
+
+.header .left .title{
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+
+.header .left .desc {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.header .icons .sm {
+    margin-right: 10px;
+    text-decoration: none;
+    border: 1px solid var(--btn-color);
+    border-radius: 99px;
+    padding: 3px 0 ;
+}
+
+.header .icons .sm i {
+    color: var(--btn-color);
+}
+
+.header .icons .sm .fa-facebook-f {
+    margin: 0 4px 0 8px;
+}
+
+.header .icons .sm .fa-linkedin-in {
+    margin: 0 2px 0 7px;
+}
+
+.header .icons .sm .fa-twitter {
+    margin: 0 1px 0 6px;
+}
+
+.header .icons .sm .fa-instagram {
+    margin: 0 6px 0 6px;
+}
+
+.header .btn {
+    margin-top: 20px;
+    color: var(--body-color);
+    background-color: var(--btn-color);
+    padding: 10px 20px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.header .btn i {
+    margin-left: 5px;
+    color: var(--body-color);
+}
+
+.header .btn:hover {
+    opacity: 0.8;
+}
